@@ -29,6 +29,7 @@ async function listRestaurant(req, res){
     try{
         await restaurant.findAll({
             attributes: [
+                'restaurantId',
                 'restaurantName',
                 'restaurantNit',
                 'restaurantAddress',
@@ -108,7 +109,7 @@ async function enableRestaurant(req, res){
             });
         })
     }
-    catch(e){
+    catch (e){
         console.log(e);
     }
 }

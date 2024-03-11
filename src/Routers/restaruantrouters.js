@@ -8,5 +8,4 @@ router.put('/updaterestaurant/:restaurantId', restaurantcontroller.updateRestaur
 router.put('/disablerestaurant/:restaurantId', restaurantcontroller.disableRestaurant);
 router.put('/enablerestaurant/:restaurantId', restaurantcontroller.enableRestaurant);
 
-
 module.exports = router;
