@@ -4,6 +4,11 @@ const restaurant = require('../Models/restaurant');
 //create restaurant
 async function createRestaurant(req, res){
     try{
+        console.log("Datos: "+ req.body.restaurantName + ";" +
+                                req.body.restaurantNit + ";" +
+                                req.body.restaurantAddress + ";" +
+                                req.body.restaurantPhone + ";" +
+                                req.body.cityId + ";" )
         await restaurant.create({
             restaurantName: req.body.restaurantName,
             restaurantNit : req.body.restaurantNit,
